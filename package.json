@@ -1,7 +1,7 @@
 {
-  "name": "mern-auth",
+  "name": "squire",
   "version": "1.0.0",
-  "description": "Mern Auth Example",
+  "description": "Welcome to Squire",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
