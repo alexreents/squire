@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Nav, Navbar } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 class Landing extends Component {
   render() {
@@ -15,22 +15,24 @@ class Landing extends Component {
             </p>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <h2>The Elevator Pitch</h2>
-            <p>
-              If we actively aggregate personal data at the individual level and
-              selectively allow developers privacy-preserving access to its
-              contents, our data becomes capital in the production of machine
-              learning technology. Individuals get returns to their "personal
-              data investments" in the form of increased access to and control
-              over the emerged artificial intelligence.
-            </p>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
+        <Container>
+          <Row>
+            <Col>
+              <h2>The Elevator Pitch</h2>
+              <p>
+                If we actively aggregate personal data at the individual level
+                and selectively allow developers privacy-preserving access to
+                its contents, our data becomes capital in the production of
+                machine learning technology. Individuals get returns to their
+                "personal data investments" in the form of increased access to
+                and control over the emerged artificial intelligence.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col sm>
               <h2>The Tech Problem</h2>
               <p class="left-col">
                 One way in which machine learning is unique is its ability to
@@ -40,8 +42,8 @@ class Landing extends Component {
                 wages), while the owners of the technology earn these losses for
                 themselves.
               </p>
-            </div>
-            <div class="col-6">
+            </Col>
+            <Col sm>
               <h2>The Economic Problem</h2>
               <p class="right-col">
                 One explanation for wage stagnation: growth to multifactor
@@ -50,29 +52,29 @@ class Landing extends Component {
                 returns capital by allowing every individual to benefit from his
                 or her data.
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <h2 class="text-white bg-dark">
+            </Col>
+          </Row>
+        </Container>
+        <Container id="standoutText">
+          <Row>
+            <h2 class="bg-dark text-white">
               The marginal impact of AI will exponentially increase,
             </h2>
-            <h2 class="text-white bg-dark">
+          </Row>
+          <Row>
+            <h2 class="bg-dark text-white">
               but the distribution of control over its development will not.
             </h2>
-          </div>
-          <br />
-          <div class="row">
+          </Row>
+          <Row>
             <div>
               <h2 class="text-dark">
                 This means a small group of decision-makers will benefit
                 tremendously while the rest of us watch powerless.
               </h2>
             </div>
-          </div>
-          <br />
-        </div>
+          </Row>
+        </Container>
         {/* <div class="container">
           <div class="row">
             <h2>Our Solution</h2>
