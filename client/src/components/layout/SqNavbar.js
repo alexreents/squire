@@ -5,7 +5,7 @@ import { Nav, Button } from "react-bootstrap";
 class SqNavbar extends Component {
   render() {
     return (
-      <Navbar bg="white" className="shadow-none">
+      <Navbar id="navbar" className="shadow-none">
         <Navbar.Brand href="/">
           <h3>
             <b>squire</b>

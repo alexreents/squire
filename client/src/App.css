@@ -1,5 +1,8 @@
-body {
-  background-color: lightgray;
+.App,
+body,
+.navbar,
+html {
+  background-color: rgb(250, 250, 250);
 }
 
 h2 {
