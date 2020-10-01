@@ -28,3 +28,9 @@ p {
 .text-white {
   background-color: darkslategray;
 }
+
+.lead {
+  max-width: 600px;
+  margin-left: 1em;
+  margin-right: 1em;
+}

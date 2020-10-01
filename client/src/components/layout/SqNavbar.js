@@ -15,7 +15,8 @@ class SqNavbar extends Component {
           <Nav className="mr-auto"></Nav>
           <Nav inline>
             <Button
-              href="/register"
+              //href="/register"
+              href="/"
               variant="outline-dark"
               className="shadow-none"
               id="getStarted"

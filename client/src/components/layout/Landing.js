@@ -9,7 +9,7 @@ class Landing extends Component {
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
           <h1 class="display-4 font-weight-bold">Squire Capital</h1>
           <div class="row justify-content-center">
-            <p class="lead col-5">
+            <p class="lead">
               It's time to revolutionize the development of future technology,
               and it begins with restructuring our personal data.
             </p>
@@ -31,29 +31,25 @@ class Landing extends Component {
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <div class="row">
-                <h2>The Tech Problem</h2>
-                <p class="left-col">
-                  One way in which machine learning is unique is its ability to
-                  replace humans. Unlike other forms of technology, AI learns
-                  from <i>itself</i>. If we develop more advanced AI, few people
-                  will need to work. This translates to many jobs lost (also
-                  stagnat wages), while the owners of the technology earn these
-                  losses for themselves.
-                </p>
-              </div>
+              <h2>The Tech Problem</h2>
+              <p class="left-col">
+                One way in which machine learning is unique is its ability to
+                replace humans. Unlike other forms of technology, AI learns from{" "}
+                <i>itself</i>. If we develop more advanced AI, few people will
+                need to work. This translates to many jobs lost (also stagnat
+                wages), while the owners of the technology earn these losses for
+                themselves.
+              </p>
             </div>
             <div class="col-6">
-              <div class="row">
-                <h2>The Economic Problem</h2>
-                <p class="right-col">
-                  One explanation for wage stagnation: growth to multifactor
-                  productivity have been distributed inequitably. Returns to
-                  Squire Capital help readjust the balance of returns to labor
-                  and returns capital by allowing every individual to benefit
-                  from his or her data.
-                </p>
-              </div>
+              <h2>The Economic Problem</h2>
+              <p class="right-col">
+                One explanation for wage stagnation: growth to multifactor
+                productivity have been distributed inequitably. Returns to
+                Squire Capital help readjust the balance of returns to labor and
+                returns capital by allowing every individual to benefit from his
+                or her data.
+              </p>
             </div>
           </div>
         </div>
@@ -71,8 +67,7 @@ class Landing extends Component {
             <div>
               <h2 class="text-dark">
                 This means a small group of decision-makers will benefit
-                tremendously <br />
-                while the rest of us watch powerless.
+                tremendously while the rest of us watch powerless.
               </h2>
             </div>
           </div>
