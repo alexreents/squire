@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+import SqNavbar from "../layout/SqNavbar";
 
 class Login extends Component {
   constructor() {
@@ -11,7 +12,7 @@ class Login extends Component {
     this.state = {
       email: "",
       password: "",
-      errors: {}
+      errors: {},
     };
   }
 
@@ -29,21 +30,21 @@ class Login extends Component {
 
     if (nextProps.errors) {
       this.setState({
-        errors: nextProps.errors
+        errors: nextProps.errors,
       });
     }
   }
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
 
     const userData = {
       email: this.state.email,
-      password: this.state.password
+      password: this.state.password,
     };
 
     this.props.loginUser(userData);
@@ -53,10 +54,22 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container">
-        <div style={{ marginTop: "4rem" }} className="row">
-          <div className="col s8 offset-s2">
-            <Link to="/" className="btn-flat waves-effect">
+      <div className="main">
+        <SqNavbar></SqNavbar>
+        <div
+          className="row"
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <div
+            className="col-8 offset-2"
+            style={{ padding: "2rem", border: "solid lightgray 1px" }}
+          >
+            <Link to="/" className="btn-flat waves-effect link">
               <i className="material-icons left">keyboard_backspace</i> Back to
               home
             </Link>
@@ -65,7 +78,10 @@ class Login extends Component {
                 <b>Login</b> below
               </h4>
               <p className="grey-text text-darken-1">
-                Don't have an account? <Link to="/register">Register</Link>
+                Don't have an account?{" "}
+                <Link className="link" to="/register">
+                  Register
+                </Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
@@ -77,7 +93,7 @@ class Login extends Component {
                   id="email"
                   type="email"
                   className={classnames("", {
-                    invalid: errors.email || errors.emailnotfound
+                    invalid: errors.email || errors.emailnotfound,
                   })}
                 />
                 <label htmlFor="email">Email</label>
@@ -94,7 +110,7 @@ class Login extends Component {
                   id="password"
                   type="password"
                   className={classnames("", {
-                    invalid: errors.password || errors.passwordincorrect
+                    invalid: errors.password || errors.passwordincorrect,
                   })}
                 />
                 <label htmlFor="password">Password</label>
@@ -106,13 +122,13 @@ class Login extends Component {
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
                   style={{
-                    width: "150px",
+                    width: "100%",
                     borderRadius: "3px",
                     letterSpacing: "1.5px",
-                    marginTop: "1rem"
+                    marginTop: "1rem",
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  className="btn btn-large waves-effect waves-light hoverable white accent-3"
                 >
                   Login
                 </button>
@@ -128,15 +144,12 @@ class Login extends Component {
 Login.propTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
 });
 
-export default connect(
-  mapStateToProps,
-  { loginUser }
-)(Login);
+export default connect(mapStateToProps, { loginUser })(Login);

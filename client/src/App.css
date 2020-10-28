@@ -46,3 +46,15 @@ p {
   padding-bottom: 3px;
   margin: 0;
 }
+
+.input-field label::after {
+  color: black !important;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: darkslategray;
+}

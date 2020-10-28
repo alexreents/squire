@@ -13,7 +13,17 @@ class LandNavbar extends Component {
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
-          <Nav inline></Nav>
+          <Nav inline>
+            <Button
+              href="/register"
+              //href="/"
+              variant="outline-dark"
+              className="shadow-none"
+              id="getStarted"
+            >
+              <small>Get Started</small>
+            </Button>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
