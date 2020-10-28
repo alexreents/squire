@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+
 import { Nav, Button } from "react-bootstrap";
 
 class LandNavbar extends Component {
@@ -13,6 +15,9 @@ class LandNavbar extends Component {
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
+          <Link to="/whitepaper" className="mr-4 waves-effect whitepaper-link">
+            Whitepaper
+          </Link>
           <Nav inline>
             <Button
               href="/register"

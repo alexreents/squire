@@ -58,3 +58,12 @@ p {
 .link:hover {
   color: darkslategray;
 }
+
+.whitepaper-link {
+  color: black;
+  font-weight: 500;
+}
+
+.whitepaper-link:hover {
+  color: black;
+}

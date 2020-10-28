@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import Landing from "./components/layout/Landing";
+import Whitepaper from "./components/layout/Whitepaper";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
@@ -41,6 +42,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Route exact path="/" component={Landing} />
+            <Route exact path="/whitepaper" component={Whitepaper} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
