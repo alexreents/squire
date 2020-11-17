@@ -19,10 +19,6 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  boxID: {
-    type: String,
-    default: ""
-  }
 });
 
 module.exports = User = mongoose.model("users", UserSchema);

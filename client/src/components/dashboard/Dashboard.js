@@ -25,7 +25,6 @@ class Dashboard extends Component {
                 <p className="flow-text grey-text text-darken-1">
                   You are logged into Squire{" "}
                 </p>
-                <p>Box ID: {user.boxID}</p>
               </h4>
               <button
                 style={{
