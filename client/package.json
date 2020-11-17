@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
+    "dns": "file:./client/src/mock/dns",
     "jwt-decode": "^2.2.0",
     "react": "^16.6.3",
     "react-bootstrap": "^1.3.0",
