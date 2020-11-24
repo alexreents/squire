@@ -3,9 +3,9 @@ const cookieSession = require("cookie-session");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
-const passportSetup = require("./config/passport-setup");
+const passportSetup = require("./config/twitter-passport");
 const path = require("path");
-const authRoutes = require("./routes/api/auth-routes");
+const authRoutes = require("./routes/api/twitter-auth");
 const keys = require("./config/keys");
 const cors = require("cors");
 const cookieParser = require("cookie-parser"); // parse cookie header
@@ -58,13 +58,13 @@ mongoose
   );
   
 
-// set up routes
+// set up twitter routes
 app.use("/auth", authRoutes);
 
-// Passport config
+// passport config
 require("./config/passport")(passport);
 
-// Routes
+// squire app routes 
 app.use("/api/users", users);
 
 

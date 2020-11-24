@@ -32,14 +32,14 @@ passport.use(
     async (token, tokenSecret, profile, done) => {
       // find current user in UserModel
       const currentUser = await User.findOne({
-        email: "q@q.com"
+        email: "test@test.com"
       });
 
       
       // create new user if the database doesn't have this user
       //if (!currentUser) {
 
-        const filter = { email: 'q@q.com' };
+        const filter = { email: 'test@test.com' };
         const update = 
         {   
             twitterScreenName: profile._json.screen_name,

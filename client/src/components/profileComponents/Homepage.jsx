@@ -61,7 +61,8 @@ export default class HomePage extends Component {
             <div>
               <h1>Success </h1>
               <h2>Name: {this.state.user.name}</h2>
-              <h2>ID: {this.state.user.twitterId}</h2>
+              <h2>Twitter Screen Name: {this.state.user.twitterScreenName}</h2>
+              <h2>Twitter ID: {this.state.user.twitterId}</h2>
               <h2>Profile Image URL: {this.state.user.twitterProfileImageUrl}</h2>
               <h2>Access Token: {this.state.user.twitterAccessToken}</h2>
               <h2>Token Secret: {this.state.user.twitterTokenSecret}</h2>

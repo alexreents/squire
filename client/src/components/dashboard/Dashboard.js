@@ -17,28 +17,9 @@ class Dashboard extends Component {
     return (
       <div class="main">
         
-        <Homepage></Homepage>
+        <SqNavbar></SqNavbar>
         
-      </div>
-    );
-  }
-}
-
-Dashboard.propTypes = {
-  logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-});
-
-export default connect(mapStateToProps, { logoutUser })(Dashboard);
-
-
-/*
-<SqNavbar></SqNavbar>
-<div style={{ height: "75vh" }} className="container valign-wrapper">
+        <div style={{ height: "50vh" }} className="container valign-wrapper">
           <div className="row">
             
             <div className="landing-copy">
@@ -63,4 +44,24 @@ export default connect(mapStateToProps, { logoutUser })(Dashboard);
             </div>
           </div>
         </div>
-      */
+        
+        <Homepage></Homepage>
+
+
+        
+      </div>
+    );
+  }
+}
+
+Dashboard.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps, { logoutUser })(Dashboard);
+
