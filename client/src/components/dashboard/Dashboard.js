@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import SqNavbar from "../layout/SqNavbar";
+import Homepage from "../profileComponents/Homepage";
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {
@@ -15,10 +16,31 @@ class Dashboard extends Component {
 
     return (
       <div class="main">
-        <SqNavbar></SqNavbar>
+        
+        <Homepage></Homepage>
+        
+      </div>
+    );
+  }
+}
 
-        <div style={{ height: "75vh" }} className="container valign-wrapper">
+Dashboard.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps, { logoutUser })(Dashboard);
+
+
+/*
+<SqNavbar></SqNavbar>
+<div style={{ height: "75vh" }} className="container valign-wrapper">
           <div className="row">
+            
             <div className="landing-copy">
               <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
@@ -41,18 +63,4 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-      </div>
-    );
-  }
-}
-
-Dashboard.propTypes = {
-  logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-});
-
-export default connect(mapStateToProps, { logoutUser })(Dashboard);
+      */

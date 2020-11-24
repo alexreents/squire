@@ -19,6 +19,11 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now
   },
+  twitterScreenName: { type: String },
+  twitterId: { type: String },
+  twitterProfileImageUrl: { type: String },
+  twitterAccessToken: { type: String },
+  twitterTokenSecret: { type: String },
 });
 
 module.exports = User = mongoose.model("users", UserSchema);
