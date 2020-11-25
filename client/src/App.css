@@ -3,6 +3,9 @@ body,
 .navbar,
 html {
   background-color: rgb(250, 250, 250);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 h2 {
@@ -74,4 +77,40 @@ p {
 
 #navbar-brand {
   color: white;
+}
+
+.aboutSection {
+  color: white;
+  height: 50vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-30%, -50%);
+  transform: translate(-30%, -50%);
+  font-weight: bold;
+}
+
+.aboutSection h1 {
+  font-size: 6em;
+}
+
+.aboutSection h2 {
+  font-size: 4em;
+  color: white;
+}
+
+.aboutSection h3 {
+  font-size: 2em;
+  color: white;
+  padding-top: 6em;
+}
+
+.infoSection {
+  height: 50vh;
+  padding: 10%;
+}
+
+.infoSection h1 {
+  font-size: 4rem;
 }

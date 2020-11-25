@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { Nav, Button } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 class LandNavbar extends Component {
   render() {

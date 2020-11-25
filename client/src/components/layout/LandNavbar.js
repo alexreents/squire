@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+/*import { Link } from "react-router-dom";
 import {
   BrowserView,
   MobileView,
   isBrowser,
   isMobile,
 } from "react-device-detect";
-import { Nav, Button } from "react-bootstrap";
+import { Nav, Button } from "react-bootstrap";*/
 
 class LandNavbar extends Component {
   render() {

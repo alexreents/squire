@@ -1,43 +1,72 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 import LandNavbar from "./LandNavbar";
-
 import { AnimatedBg, Transition } from 'scroll-background';
 
 const Example = () => (
   <AnimatedBg>
     <LandNavbar></LandNavbar>
-    <div style={{ height: '50vh' }}>
+    <div className="aboutSection">
+      <Container>
+        <Row>
+          <h1>Your data belongs to you.</h1> 
+        </Row>
+        <Row>
+          <h2>We're changing how it's used.</h2> 
+        </Row>
+        <Row>
+          <h3>(here's why you should care)</h3> 
+        </Row>
+      </Container>
     </div>
+
+    <Transition height="25vh" from="#000000" to="#000000"></Transition>
+
+    <div className="infoSection">
+    </div>
+
     <Transition height="50vh" from="#000000" to="#fff"></Transition>
-    <div style={{ height: '50vh' }}>
+
+    <div className="infoSection">
       <h1>Info</h1>
     </div>
+
     <Transition height="50vh" from="#fff" to="#fff"></Transition>
-    <div style={{ height: '50vh' }}>
+
+    <div className="infoSection">
       <h1>Info</h1>
     </div>
+
     <Transition height="50vh" from="#fff" to="#3b5998"></Transition>
-    <div style={{ height: '50vh' }}>
-      <h1 style={{ color: 'white' }}>Facebook</h1>
+
+    <div className="infoSection" style={{ color: 'white'}}>
+      <h1>Facebook</h1>
     </div>
+
     <Transition height="50vh" from="#3b5998" to="#00acee"></Transition>
-    <div style={{ height: '50vh' }}>
-      <h1 style={{ color: 'white' }}>Twitter</h1>
+
+    <div className="infoSection" style={{ color: 'white' }}>
+      <h1>Twitter</h1>
     </div>
+
     <Transition height="50vh" from="#00acee" to="#ffce44"></Transition>
-    <div style={{ height: '50vh' }}>
-      <h1 style={{ color: 'black' }}>Google</h1>
+
+    <div className="infoSection">
+      <h1>Google</h1>
     </div>
-    <Transition height="50vh" from="#ffce44" to="#e47911"></Transition> 
-    <div style={{ height: '50vh' }}>
-      <h1 style={{ color: 'white' }}>Amazon</h1>
+
+    <Transition height="50vh" from="#ffce44" to="#e47911"></Transition>
+
+    <div className="infoSection" style={{ color: 'white' }}>
+      <h1>Amazon</h1>
     </div>
+
     <Transition height="50vh" from="#e47911" to="#000000"></Transition> 
-    <div style={{ height: '100vh' }}>
-      <h1 style={{ color: 'white' }}>Let's get started.</h1>
+
+    <div className="infoSection" style={{ color: 'white' }}>
+      <h1>Let's get started.</h1>
     </div>
+
   </AnimatedBg>
 )
 
