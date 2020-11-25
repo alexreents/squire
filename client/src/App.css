@@ -22,7 +22,7 @@ p {
   border-radius: 0%;
 }
 #getStarted:hover {
-  background-color: darkslategray;
+  background-color: white;
 }
 
 .text-white {
@@ -66,4 +66,12 @@ p {
 
 .whitepaper-link:hover {
   color: black;
+}
+
+#navbar {
+  background-color: transparent;
+}
+
+#navbar-brand {
+  color: white;
 }
