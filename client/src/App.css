@@ -118,6 +118,17 @@ p {
 
 .infoSection h2 {
   font-size: 3rem;
+  color: white;
+}
+
+.infoSection a {
+  color: white;
+  text-decoration: underline;
+}
+
+.infoSection a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .aggregationContainer {
@@ -158,4 +169,60 @@ p {
   position: absolute;
   top: 30%;
   -ms-transformy: -50%;
+}
+
+.twitterJSON {
+  margin-right: -15%;
+}
+
+.TwitterImage {
+  width: 5em;
+  padding-top: 2em;
+}
+
+.jsonDescription {
+  margin-top: 2em;
+  margin-right: 3em;
+  line-height: 2;
+}
+
+.FacebookScreenshot {
+  width: 80%;
+}
+
+.GoogleText {
+  width: 25%;
+}
+
+.FacebookText {
+  width: 60%;
+  padding-left: 18%;
+}
+
+.AmazonText {
+  width: 40%;
+}
+
+.readMore {
+  padding-top: 3em;
+  width: 80%;
+}
+
+.readMore:hover h4 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  height: 25vh;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.footer text {
+  color: grey;
+}
+
+.line {
+  border: 1px solid white;
 }

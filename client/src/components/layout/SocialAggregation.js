@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Amazon_logo from "./logos/amazon.png"
-import down_arrow_right from "./logos/arrow-down-right.png"
-import Facebook_logo from "./logos/facebook.png"
-import Google_logo from "./logos/google.png"
-import Instagram_logo from "./logos/instagram.png"
-import Snapchat_logo from "./logos/snapchat.png"
-import Spotify_logo from "./logos/spotify.png"
-import Twitter_logo from "./logos/twitter.png"
-import Youtube_logo from "./logos/youtube.png"
+import Amazon_logo from "./images/amazon.png"
+import Facebook_logo from "./images/facebook.png"
+import Google_logo from "./images/google.png"
+import Instagram_logo from "./images/instagram.png"
+import Snapchat_logo from "./images/snapchat.png"
+import Spotify_logo from "./images/spotify.png"
+import Twitter_logo from "./images/twitter.png"
+import Youtube_logo from "./images/youtube.png"
 
 import { 
     ArrowDownRight, 
