@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import LandNavbar from "./LandNavbar";
 import { AnimatedBg, Transition } from 'scroll-background';
 import SocialAggregation from "./SocialAggregation";
 import WhiteTwitterLogo from "./images/white-twitter.png"
 import JSONPretty from 'react-json-pretty';
 import FacebookScreenshot from "./images/facebook-screenshot.png"
-import GoogleText from "./images/google-text.png"
-import FacebookText from "./images/facebook-text.png"
-import AmazonText from "./images/amazon-text.png"
-import ReadMore from "./ReadMore"
-import Footer from "./Footer"
+import GoogleText from "./images/google-text.png";
+import FacebookText from "./images/facebook-text.png";
+import AmazonText from "./images/amazon-text.png";
+import ReadMore from "./ReadMore";
+import Footer from "./Footer";
 
 const twitterJSON = 
 
@@ -118,9 +118,10 @@ const Example = () => (
             <u> determine</u> their impressionability, and <u>target</u> them with an advertisment.</h3>
             <ReadMore></ReadMore>
           </Col>
-
+          
           <Col className="twitterJSON">
             <JSONPretty id="json-pretty" data={twitterJSON} mainStyle="color:white"></JSONPretty>
+            
           </Col>
         </Row>
       </Container>

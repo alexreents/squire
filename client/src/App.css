@@ -110,6 +110,7 @@ p {
   height: 50vh;
   padding-left: 10%;
   padding-right: 10%;
+  z-index: 100;
 }
 
 .infoSection h1 {
@@ -165,7 +166,7 @@ p {
 }
 
 .center-logo {
-  font-weight: 900;
+  font-weight: 1800;
   position: absolute;
   top: 30%;
   -ms-transformy: -50%;
@@ -173,6 +174,7 @@ p {
 
 .twitterJSON {
   margin-right: -15%;
+  font-weight: bold;
 }
 
 .TwitterImage {
@@ -205,10 +207,11 @@ p {
 
 .readMore {
   padding-top: 3em;
+  padding-left: 5em;
   width: 80%;
 }
 
-.readMore:hover h4 {
+.readMore h4:hover text {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -225,4 +228,12 @@ p {
 
 .line {
   border: 1px solid white;
+}
+
+.arrow-curve-up {
+  width: 140%;
+  z-index: 50;
+  margin-top: -20%;
+  margin-left: -20% !important;
+  transform: rotate(5deg);
 }
