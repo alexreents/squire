@@ -119,7 +119,6 @@ p {
 
 .infoSection h2 {
   font-size: 3rem;
-  color: white;
 }
 
 .infoSection a {
@@ -192,17 +191,15 @@ p {
   width: 80%;
 }
 
-.GoogleText {
-  width: 25%;
+.GoogleText,
+.YoutubeText,
+.SpotifyText {
+  width: 80%;
 }
 
 .FacebookText {
   width: 60%;
   padding-left: 18%;
-}
-
-.AmazonText {
-  width: 40%;
 }
 
 .readMore {
@@ -234,6 +231,54 @@ p {
   width: 140%;
   z-index: 50;
   margin-top: -20%;
-  margin-left: -20% !important;
+  margin-left: -20%;
   transform: rotate(5deg);
+}
+
+.facebookArrow {
+  width: 90%;
+  transform: rotate(12deg);
+  margin-top: -10%;
+  margin-left: 5%;
+}
+
+.facebook-img {
+  margin-top: -5%;
+}
+
+#white-text h1,
+#white-text h2,
+#white-text h3,
+#white-text h4,
+#white-text h5,
+#white-text h6 {
+  color: white;
+}
+
+#black-text h1,
+#black-text h2,
+#black-text h3,
+#black-text h4,
+#black-text h5,
+#black-text h6 {
+  color: black;
+}
+
+.businessModel .Row {
+  height: 30vh;
+}
+
+.freemium {
+  padding-bottom: 7em;
+}
+
+#free-quote {
+  text-align: right;
+  font-family: "reenie-beanie";
+  font-weight: 600;
+  font-style: normal;
+}
+
+#quote-attributed {
+  text-align: right;
 }

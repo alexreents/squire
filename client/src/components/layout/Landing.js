@@ -8,9 +8,11 @@ import JSONPretty from 'react-json-pretty';
 import FacebookScreenshot from "./images/facebook-screenshot.png"
 import GoogleText from "./images/google-text.png";
 import FacebookText from "./images/facebook-text.png";
-import AmazonText from "./images/amazon-text.png";
+import YoutubeText from "./images/youtube-text.png";
+import SpotifyText from "./images/spotify-text.png";
 import ReadMore from "./ReadMore";
 import Footer from "./Footer";
+import ArrowCurveUp from "./images/arrow-curve-up.png";
 
 const twitterJSON = 
 
@@ -42,7 +44,7 @@ const twitterJSON =
 }
 
 
-const Example = () => (
+const Landing = () => (
 
   <AnimatedBg>
     <LandNavbar></LandNavbar>
@@ -67,30 +69,43 @@ const Example = () => (
 
     <Transition height="75vh" from="#000000" to="#fff"></Transition>
 
-    <div className="infoSection">
-        <h1>Squire helps you aggregate your personal data,</h1>
-        <h1>in whichever ways <i>you</i> decide.</h1> 
+    <div className="infoSection" id="black-text">
+        <h2>Squire helps you aggregate your personal data,</h2>
+        <h2>in whichever ways <i>you</i> decide.</h2> 
         
         <SocialAggregation></SocialAggregation>
     </div>
 
     <Transition height="75vh" from="#fff" to="#fff"></Transition>
 
-    <div className="infoSection">
-      <h1>Info</h1>
+    <div className="infoSection" id="black-text">
+      <h2>The result is an incredibly <u>powerful</u> repository of information about yourself.</h2>
+      <br></br>
+      <h2><u>You</u> control this data and can do with it what you like.</h2>
     </div>
 
     <Transition height="75vh" from="#fff" to="#3b5998"></Transition>
 
-    <div className="infoSection" style={{ color: 'white'}}>
+    <div className="infoSection">
       <Container>
         <Row>
-          <Col>Facebook</Col>
           <Col>
-            <Row>
-              <img class="FacebookText" src={FacebookText} alt=""/>
-              <img class="FacebookScreenshot" src={FacebookScreenshot} alt=""/> 
+            <Row id="white-text">
+              <h2>Only a handful of Big Tech firms have extensive personal data aggregation.
+                This allows these few companies to use that data however <u>they</u> choose.  
+              </h2>
+              <br></br>
+              <h2>Insights from your data are particularly valuable to marketers, so companies like Facebook, Google, 
+                and Twitter use information like <u style={{color: 'white'}}>this</u> to make profits.
+              </h2>
+              <img className="facebookArrow" src={ArrowCurveUp} alt=""/>
             </Row>
+          </Col>
+          <Col>
+              <div className="facebook-img">
+                  <img className="FacebookText" src={FacebookText} alt=""/>
+                  <img className="FacebookScreenshot" src={FacebookScreenshot} alt=""/> 
+              </div>
           </Col>
         </Row>
       </Container>
@@ -127,19 +142,34 @@ const Example = () => (
       </Container>
     </div>
 
-    <Transition height="75vh" from="#00acee" to="#ffce44"></Transition>
+
+    <Transition height="75vh" from="#00acee" to="#ff6961"></Transition>
 
     <div className="infoSection">
-      <img class="GoogleText" src={GoogleText} alt=""/> 
+      <Container>
+        <Row>
+          <Col sm={3}>
+            <Row className="freemium">
+              <img class="YoutubeText" src={YoutubeText} alt=""/>
+            </Row>
+            <Row className="freemium">
+              <img class="GoogleText" src={GoogleText} alt=""/>  
+            </Row>
+            <Row className="freemium">
+              <img class="SpotifyText" src={SpotifyText} alt=""/>  
+            </Row>
+          </Col>
+          <Col sm={9} id="white-text">
+            <h1 id="free-quote">"If you are not paying for it, you’re not the customer; you’re the product being sold."</h1>
+            <h4 id="quote-attributed">- Re-tweeted by Tim O'Reilly in 2010</h4>
+          </Col>
+        </Row>
+        
+      </Container>
+
     </div>
 
-    <Transition height="75vh" from="#ffce44" to="#e47911"></Transition>
-
-    <div className="infoSection" style={{ color: 'white' }}>
-    <img class="AmazonText" src={AmazonText} alt=""/> 
-    </div>
-
-    <Transition height="75vh" from="#e47911" to="#000000"></Transition> 
+    <Transition height="75vh" from="#ff6961" to="#000000"></Transition> 
 
     <div className="infoSection" style={{ color: 'white' }}>
       <h1>Let's get started.</h1>
@@ -155,26 +185,15 @@ const Example = () => (
 
 )
 
-export default Example;
+export default Landing;
 
-/*
-class Landing extends Component {
-  render() {
-    return (
-      <div class="main">
-        <LandNavbar></LandNavbar>
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 font-weight-bold">Squire Capital</h1>
-          <div class="row justify-content-center">
-            <p class="lead">
-              It's time for us to benefit from our personal data. With Squire,
-              you can aggregate your data today, and invest in the technology of
-              tomorrow.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+
+/* removing Google section
+
+<Transition height="75vh" from="#00acee" to="#ffce44"></Transition>
+
+    <div className="infoSection">
+      
+    </div>
+
 */

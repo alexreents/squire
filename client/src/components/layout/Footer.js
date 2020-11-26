@@ -13,7 +13,7 @@ class Footer extends Component {
                     <text>Three</text>
                 </Col>
                 <Col>
-                    <h6><b>Company</b></h6>
+                    <h6><b>Our Company</b></h6>
                     <text>One</text> <br></br>
                     <text>Two</text> <br></br>
                     <text>Three</text>
