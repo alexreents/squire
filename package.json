@@ -44,6 +44,7 @@
     "react-native": "^0.63.3",
     "react-native-responsive-dimensions": "^3.1.1",
     "react-native-responsive-fontsize": "^0.5.0",
+    "react-scroll": "^1.8.1",
     "react-scroll-backdrop": "^1.0.1",
     "react-scroll-parallax": "^2.3.5",
     "react-scrolling-color-background": "^1.0.2",

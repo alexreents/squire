@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LandNavbar from "./LandNavbar";
 import { AnimatedBg, Transition } from 'scroll-background';
@@ -43,9 +43,8 @@ const twitterJSON =
   }],
 }
 
-
 const Landing = () => (
-
+  
   <AnimatedBg>
     <LandNavbar></LandNavbar>
     <div className="aboutSection">
@@ -95,8 +94,8 @@ const Landing = () => (
                 This allows these few companies to use that data however <u>they</u> choose.  
               </h2>
               <br></br>
-              <h2>Insights from your data are particularly valuable to marketers, so companies like Facebook, Google, 
-                and Twitter use information like <u style={{color: 'white'}}>this</u> to make profits.
+              <h2>Typically, that purpose is for marketing. Effective advertisements are highly profitable, so 
+                companies like Facebook, Google, and Twitter analyze your <u style={{color: 'white'}}>behavior</u> in various ways.
               </h2>
               <img className="facebookArrow" src={ArrowCurveUp} alt=""/>
             </Row>
@@ -129,7 +128,7 @@ const Landing = () => (
         <Row>
           <Col>
             <img class="TwitterImage" src={WhiteTwitterLogo} alt=""/> 
-            <h3 className="jsonDescription">Here's an example of how Twitter can <u>learn</u> about its users, <u>classify</u> their interests, 
+            <h3 className="jsonDescription">To the right is an example of how Twitter can <u>learn</u> about its users, <u>classify</u> their interests, 
             <u> determine</u> their impressionability, and <u>target</u> them with an advertisment.</h3>
             <ReadMore></ReadMore>
           </Col>
@@ -159,9 +158,16 @@ const Landing = () => (
               <img class="SpotifyText" src={SpotifyText} alt=""/>  
             </Row>
           </Col>
-          <Col sm={9} id="white-text">
+          <Col sm={9} id="business-models">
             <h1 id="free-quote">"If you are not paying for it, you’re not the customer; you’re the product being sold."</h1>
-            <h4 id="quote-attributed">- Re-tweeted by Tim O'Reilly in 2010</h4>
+            <h4>- Re-tweeted by Tim O'Reilly in 2010</h4>
+            <p>These companies aren't evil, and their services offer real benefits to our world. 
+              However, the advertising and freemium business models skew their incentives. Instead of building products 
+              that are good for users or truly enhance our lives, these companies are more motivated to keep us hooked to their
+              platforms and continuously presented with advertisements. The YouTube autoplay feature, Snapchat streaks, and 
+              algorithms that promote emotion-evoking content over substantive information are all design choices to keep us 
+              digitally engaged. In an effort to get us to click on more ads, these companies have inadvertently built 
+              addictive technologies, widespread surveillance systems, and havens for proliferating disinformation.</p>
           </Col>
         </Row>
         

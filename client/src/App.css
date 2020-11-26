@@ -273,12 +273,20 @@ p {
 }
 
 #free-quote {
-  text-align: right;
   font-family: "reenie-beanie";
   font-weight: 600;
   font-style: normal;
 }
 
-#quote-attributed {
+#business-models h1,
+#business-models h4 {
   text-align: right;
+  color: white;
+}
+
+#business-models p {
+  text-align: right;
+  color: white;
+  padding-top: 4rem;
+  font-size: 20px;
 }
