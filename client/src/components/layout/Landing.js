@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LandNavbar from "./LandNavbar";
 import { AnimatedBg, Transition } from 'scroll-background';
@@ -6,13 +6,15 @@ import SocialAggregation from "./SocialAggregation";
 import WhiteTwitterLogo from "./images/white-twitter.png"
 import JSONPretty from 'react-json-pretty';
 import FacebookScreenshot from "./images/facebook-screenshot.png"
-import GoogleText from "./images/google-text.png";
+import GoogleTextBlack from "./images/google-text-black.png";
+import TikTokText from "./images/tiktok-text.png";
 import FacebookText from "./images/facebook-text.png";
 import YoutubeText from "./images/youtube-text.png";
 import SpotifyText from "./images/spotify-text.png";
 import ReadMore from "./ReadMore";
 import Footer from "./Footer";
 import ArrowCurveUp from "./images/arrow-curve-up.png";
+import Typing from 'react-typing-animation';
 
 const twitterJSON = 
 
@@ -152,7 +154,7 @@ const Landing = () => (
               <img class="YoutubeText" src={YoutubeText} alt=""/>
             </Row>
             <Row className="freemium">
-              <img class="GoogleText" src={GoogleText} alt=""/>  
+              <img class="TikTokText" src={TikTokText} alt=""/>  
             </Row>
             <Row className="freemium">
               <img class="SpotifyText" src={SpotifyText} alt=""/>  
@@ -175,7 +177,37 @@ const Landing = () => (
 
     </div>
 
-    <Transition height="75vh" from="#ff6961" to="#000000"></Transition> 
+    <Transition height="75vh" from="#ff6961" to="#ffce44"></Transition>
+
+    <div className="innovationSection">
+      <Container>
+        <Row id="google-block">
+          <Col sm={4}>
+            <img class="GoogleText" src={GoogleTextBlack} alt=""/>  
+            <Typing loop="True">
+              <div id="google-search-bar">
+                <Typing.Delay ms={500} />
+                <span>Does Google stifle competition?</span>
+                <Typing.Delay ms={2000} />
+                <Typing.Backspace count={20} />
+                <Typing.Delay ms={500} />
+                <span>still innovate?</span>
+                <Typing.Delay ms={2000} />
+                <Typing.Backspace count={28} />
+              </div>
+            </Typing>
+          </Col>
+          <Col sm={8} id="invest">
+              <h1>Invest in your data,</h1>
+              <h1>Invest in technology.</h1>
+          </Col>
+          
+        </Row>
+      </Container>
+      
+    </div>
+
+    <Transition height="75vh" from="#ffce44" to="#000000"></Transition> 
 
     <div className="infoSection" style={{ color: 'white' }}>
       <h1>Let's get started.</h1>
@@ -194,12 +226,3 @@ const Landing = () => (
 export default Landing;
 
 
-/* removing Google section
-
-<Transition height="75vh" from="#00acee" to="#ffce44"></Transition>
-
-    <div className="infoSection">
-      
-    </div>
-
-*/
