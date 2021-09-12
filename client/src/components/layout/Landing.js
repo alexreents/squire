@@ -2,19 +2,21 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LandNavbar from "./LandNavbar";
 import { AnimatedBg, Transition } from 'scroll-background';
-import SocialAggregation from "./SocialAggregation";
+//import SocialAggregation from "./SocialAggregation";
 import WhiteTwitterLogo from "./images/white-twitter.png"
 import JSONPretty from 'react-json-pretty';
 import FacebookScreenshot from "./images/facebook-screenshot.png"
-import GoogleTextBlack from "./images/google-text-black.png";
-import TikTokText from "./images/tiktok-text.png";
 import FacebookText from "./images/facebook-text.png";
+import TikTokText from "./images/tiktok-text.png";
 import YoutubeText from "./images/youtube-text.png";
 import SpotifyText from "./images/spotify-text.png";
 import ReadMore from "./ReadMore";
 import Footer from "./Footer";
 import ArrowCurveUp from "./images/arrow-curve-up.png";
-import Typing from 'react-typing-animation';
+//import SqAnimation from "./SqAnimation";
+//import GoogleSearch from "./GoogleSearch";
+import TextLoop from "react-text-loop";
+
 
 const twitterJSON = 
 
@@ -46,6 +48,7 @@ const twitterJSON =
 }
 
 const Landing = () => (
+
   
   <AnimatedBg>
     <LandNavbar></LandNavbar>
@@ -58,7 +61,7 @@ const Landing = () => (
           <h2>We're changing how it's used.</h2> 
         </Row>
         <Row>
-          <h3>(here's how it works)</h3> 
+          <h3>(here's how squire works behind-the-scenes)</h3> 
         </Row>
       </Container>
     </div>
@@ -73,8 +76,6 @@ const Landing = () => (
     <div className="infoSection" id="black-text">
         <h2>Squire helps you aggregate your personal data,</h2>
         <h2>in whichever ways <i>you</i> decide.</h2> 
-        
-        <SocialAggregation></SocialAggregation>
     </div>
 
     <Transition height="75vh" from="#fff" to="#fff"></Transition>
@@ -143,7 +144,6 @@ const Landing = () => (
       </Container>
     </div>
 
-
     <Transition height="75vh" from="#00acee" to="#ff6961"></Transition>
 
     <div className="infoSection">
@@ -180,31 +180,12 @@ const Landing = () => (
     <Transition height="75vh" from="#ff6961" to="#ffce44"></Transition>
 
     <div className="innovationSection">
-      <Container>
-        <Row id="google-block">
-          <Col sm={4}>
-            <img class="GoogleText" src={GoogleTextBlack} alt=""/>  
-            <Typing loop="True">
-              <div id="google-search-bar">
-                <Typing.Delay ms={500} />
-                <span>Does Google stifle competition?</span>
-                <Typing.Delay ms={2000} />
-                <Typing.Backspace count={20} />
-                <Typing.Delay ms={500} />
-                <span>still innovate?</span>
-                <Typing.Delay ms={2000} />
-                <Typing.Backspace count={28} />
-              </div>
-            </Typing>
+      <Row id="google-block">
+          <Col id="invest">
+              <h1>Collect your data,</h1>
+              <h1>Invest in <TextLoop interval="2000"><span>technology</span><span>analytics</span><span>AI</span><span><b>yourself</b></span></TextLoop></h1>
           </Col>
-          <Col sm={8} id="invest">
-              <h1>Invest in your data,</h1>
-              <h1>Invest in technology.</h1>
-          </Col>
-          
-        </Row>
-      </Container>
-      
+      </Row>
     </div>
 
     <Transition height="75vh" from="#ffce44" to="#000000"></Transition> 
@@ -224,5 +205,6 @@ const Landing = () => (
 )
 
 export default Landing;
+
 
 
