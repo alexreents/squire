@@ -28,18 +28,18 @@ passport.use(
       callbackURL: "/auth/twitter/redirect"
     },
     
-
+    
     async (token, tokenSecret, profile, done) => {
       // find current user in UserModel
       const currentUser = await User.findOne({
-        email: "test@test.com"
+        email: "alexreents@live.com"
       });
 
       
       // create new user if the database doesn't have this user
       //if (!currentUser) {
 
-        const filter = { email: 'test@test.com' };
+        const filter = { email: 'alexreents@live.com' };
         const update = 
         {   
             twitterScreenName: profile._json.screen_name,
